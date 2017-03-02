@@ -1,4 +1,4 @@
-all:
+install:
   if [ ! -d /usr/include/basm ]; then
     sudo mkdir /usr/include/basm
   fi
