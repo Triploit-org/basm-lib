@@ -5,14 +5,6 @@ write_string: # needs string value on Stack, Length on String in HX
 		pop
 	ggn beg
 	return
-	
-write_int: # needs string value on Stack, Length on String in HX
-	.beg:
-		sub 1, hx
-		outl
-		pop
-	ggn beg
-	return
 
 write_array_char: # needs string value in LIST_AX
 	ags list_ax, hx
@@ -27,7 +19,7 @@ write_array_char: # needs string value in LIST_AX
 	ggn beg
 	return
 	
-write_array_int: # needs string value in LIST_AX
+write_array_int: # needs int values in LIST_AX
 	ags list_ax, hx
 	mov 0, ax
 	.beg:
