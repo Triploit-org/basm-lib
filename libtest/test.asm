@@ -7,7 +7,7 @@ main:
     mvv hx, o_in
 
     jmp stack_to_array
-    jmp array_to_stack
+    pushv list_ax
 
     pushv o_in
     str hx
