@@ -38,7 +38,6 @@ func remove
 
 func install_win
 {
-    @echo Hallo
     <[
         c:
         cd %AppData%\basm-lib
@@ -50,6 +49,7 @@ func install_win
             mkdir C:\basm
             move *.asm C:\basm
         )
+        pause
     ]>
 }
 
