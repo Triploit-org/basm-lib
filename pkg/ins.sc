@@ -9,7 +9,6 @@ func install
         fi
 
         sudo mv *.asm /usr/include/basm/
-        read a
     ]>
 }
 
