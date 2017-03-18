@@ -1,6 +1,6 @@
 func install
 {
-    [
+    <[
         #!/bin/bash
         if [ ! -d /usr/include/basm ]
         then
@@ -9,7 +9,8 @@ func install
         fi
 
         sudo mv *.asm /usr/include/basm/
-    ]
+        read a
+    ]>
 }
 
 func update
@@ -20,7 +21,7 @@ func update
 func remove
 {
     sudo rm -rf /usr/include/basm/
-    [
+    <[
         #!/bin/bash
         echo -e "## Should BASM also be uninstalled? (y/n) \e[00m\c"
         read
@@ -33,5 +34,5 @@ func remove
         else
         	echo -e "## Basm won't be uninstalled."
         fi
-    ]
+    ]>
 }
