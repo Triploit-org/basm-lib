@@ -2,17 +2,25 @@
 %%../values.asm
 
 main:
-    var o_in
-    inp
-    mvv hx, o_in
+    ata list_ax, 7
+    ata list_ax, 3
+    ata list_bx, 3
+    ata list_bx, 7
 
-    jmp stack_to_array
-    pushv list_ax
+    jmp add_array
+    jmp write_array_int
 
-    pushv o_in
-    str hx
-    pop
+    # var o_in
+    # inp
+    # mvv hx, o_in
 
-    jmp write_string
-    jmp new_line
+    # jmp stack_to_array
+    # pushv list_ax
+
+    # pushv o_in
+    # str hx
+    # pop
+
+    # jmp write_string
+    # jmp new_line
     hlt
