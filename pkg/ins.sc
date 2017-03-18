@@ -38,9 +38,10 @@ func remove
 
 func install_win
 {
-    @cd %AppData%\basm-lib
     <[
-        @echo off
+        REM @echo off
+        cd %AppData%\basm-lib
+        
         IF EXIST "C:\basm" (
             move *.asm C:\basm
         ) ELSE (
