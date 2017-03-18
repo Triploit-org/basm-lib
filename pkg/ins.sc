@@ -38,6 +38,7 @@ func remove
 
 func install_win
 {
+    @echo Hallo
     <[
         c:
         cd %AppData%\basm-lib
