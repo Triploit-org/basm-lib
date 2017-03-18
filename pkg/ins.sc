@@ -1,6 +1,7 @@
 func install
 {
-    if [ ! -d /usr/include/basm ]; then
+    if [ ! -d /usr/include/basm ]
+    then
     	echo "Create BASM Include Directory."
     	sudo mkdir /usr/include/basm
     fi
