@@ -35,3 +35,31 @@ func remove
         fi
     ]>
 }
+
+func install_win
+{
+    <[
+        @echo off
+        IF EXIST "C:\basm" (
+            move *.asm C:\basm
+        ) ELSE (
+            mkdir C:\basm
+            move *.asm C:\basm
+        )
+    ]>
+}
+
+func update_win
+{
+    &install
+}
+
+func remove_win
+{
+    <[
+        @echo off
+        IF EXIST "C:\basm" (
+            del C:\basm
+        )
+    ]>
+}
