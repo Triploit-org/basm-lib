@@ -39,7 +39,6 @@ func remove
 func install_win
 {
     <[
-        REM @echo off
         cd %AppData%\basm-lib
         
         IF EXIST "C:\basm" (
