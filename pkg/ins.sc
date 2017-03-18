@@ -41,7 +41,7 @@ func install_win
     <[
         cd %AppData%\basm-lib
         
-        IF EXIST "C:\basm" (
+        IF EXIST C:\basm (
             move *.asm C:\basm
         ) ELSE (
             mkdir C:\basm
@@ -59,7 +59,7 @@ func remove_win
 {
     <[
         @echo off
-        IF EXIST "C:\basm" (
+        IF EXIST C:\basm (
             del C:\basm
         )
     ]>
