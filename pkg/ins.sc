@@ -40,6 +40,7 @@ func install_win
 {
     <[
         @echo off
+        c:
         cd %AppData%\basm-lib
         echo --------------- %cd%
         
