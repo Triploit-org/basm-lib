@@ -36,26 +36,21 @@ func remove
     ]>
 }
 
+func werror
+{
+    @echo Please download the Package manually and
+    @echo create a directory "C:\basm"!
+    @echo Please move all source files tp this Directory(actually io.asm and value.asm).
+}
+
 func install_win
 {
-    <[
-        c:
-        cd %AppData%\basm-lib
-        echo --------------- %cd%
-        
-        IF EXIST C:\basm (
-            move *.asm C:\basm
-        ) ELSE (
-            mkdir C:\basm
-            move *.asm C:\basm
-        )
-        pause
-    ]>
+    &werror
 }
 
 func update_win
 {
-    &install
+    &werror
 }
 
 func remove_win
