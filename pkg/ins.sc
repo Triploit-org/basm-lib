@@ -1,16 +1,13 @@
-func install
-{
-    <[
-        #!/bin/bash
-        if [ ! -d /usr/include/basm ]
-        then
-            echo "Create BASM Include Directory."
-            sudo mkdir /usr/include/basm
-        fi
+func install {<[
+    #!/bin/bash
+    if [ ! -d /usr/include/basm ]
+    then
+        echo "Create BASM Include Directory."
+        sudo mkdir /usr/include/basm
+    fi
 
-        sudo mv *.asm /usr/include/basm/
-    ]>
-}
+    sudo mv *.asm /usr/include/basm/
+]>}
 
 func update
 {
@@ -27,9 +24,9 @@ func remove
 
         if [[ $REPLY =~ ^[Yy]$ ]]
         then
-        	# sudo rm /usr/bin/basm/
-        	sudo secpm remove basm
-        	# echo -e "## OK.\e[00m"
+		# sudo rm /usr/bin/basm/
+		sudo secpm remove triploit:basm
+		# echo -e "## OK.\e[00m"
         else
         	echo -e "## Basm won't be uninstalled."
         fi
