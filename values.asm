@@ -33,7 +33,3 @@ stack_to_array:		# needs length of input in hx, output in list_ax; if yout get i
 	ptr hx, hx
 	ptr fx, fx
 	return
-
-# add_array: # adds list_bx to list_ax
-	# pushv x    -> x to stack
-	# mvv ax, x  -> x = ax
