@@ -1,3 +1,7 @@
+name basm-lib
+user triploit
+ver 0.0.0.1
+
 func install {<[
     #!/bin/bash
     if [ ! -d /usr/include/basm ]
