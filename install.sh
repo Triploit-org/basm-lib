@@ -4,7 +4,7 @@ if [ ! -d /usr/include/basm ]; then
 	sudo mkdir /usr/include/basm
 fi
 echo "-- IO"
-sudo cp io.asm /usr/include/basm/io.asm
+sudo cp lib/io.asm /usr/include/basm/io.asm
 echo "-- VALUES"
-sudo cp values.asm /usr/include/basm/values.basm
+sudo cp lib/values.asm /usr/include/basm/values.basm
 

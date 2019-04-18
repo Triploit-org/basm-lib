@@ -1,0 +1,17 @@
+name: "BASM Library by Triploit"
+version: "0.0.1a"
+description: "A tiny standard library for basm programming language"
+information: ""
+
+authors:
+  - survari
+
+products:
+  - "./lib/": "/usr/include/basm/"
+
+dependencies:
+  - triploit:basm@github.com
+
+gituser: triploit
+server: github.com
+reponame: basm-lib
